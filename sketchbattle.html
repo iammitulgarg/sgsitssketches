@@ -226,6 +226,43 @@ a.active {
   }
 }
 
+
+/*Gallery*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
     </style>
 
 
@@ -303,11 +340,11 @@ for (i = 0; i < dropdown.length; i++) {
     <em>
         A flower does not think of competing to the flower next to it.It just blooms.
         Similarly, artworks cannot be compared, they just flourish in their own way.
-        So, come and see them flourish in the Battles.
+        Come and see them flourish in the Battles.
     <em/>
 </div>
 <hr style="border-color:grey;">
-     <p style="color:#CCFFFF; font-size:6vw; text-align:center; font-family: 'Lobster', cursive;">Our Battles had more than 200+ Votes every time and there were a total of 30 Battles! The Voting lines are kept open for a period of 24 Hours only!<br/>Visit Our Instagram Page and Enjoy the Sketch Battles in the Highlights</p>
+     <p style="color:#CCFFFF; font-size: calc(1em + 2vw); text-align:center; font-family: 'Merriweather', serif">Our Battles had more than 200+ Votes every time and there were a total of 30 Battles! The Voting lines are kept open for a period of 24 Hours only!<br/>Some of the Artworks are below. Do have a glance over them! Visit Our Instagram Page and Enjoy the Sketch Battles in the Highlights</p>
      <center>
     <button class="button" onclick="document.location='https://www.instagram.com/sgsits_sketches'">Visit Now</button><br/></center>
 <style>
@@ -323,16 +360,38 @@ for (i = 0; i < dropdown.length; i++) {
 }
 </style>
 
+<hr style="border-color:grey;">
+
+
+<div class="row">
+  <div class="column">
+    <img src="SketchBattleBest/1.jpg">
+    <img src="SketchBattleBest/2.jpg">
+    <img src="SketchBattleBest/3.jpg">
+  </div>
+  <div class="column">
+    <img src="SketchBattleBest/4.jpg">
+    <img src="SketchBattleBest/5.jpg">
+    <img src="SketchBattleBest/6.jpg">
+  </div>
+  <div class="column">
+    <img src="SketchBattleBest/7.jpg">
+    <img src="SketchBattleBest/8.jpg">
+    <img src="SketchBattleBest/9.jpg">
+  </div>
+  <div class="column">
+    <img src="SketchBattleBest/10.jpg">
+    <img src="SketchBattleBest/11.jpg">
+    <img src="SketchBattleBest/12.jpg">
+  </div>
+</div>
 
 
 
-
-
-    
 
 
 
     <hr style="border-color:grey;">
-    
+
 </body>
 </html>
