@@ -321,12 +321,14 @@ for (i = 0; i < dropdown.length; i++) {
 
     <center>
     <div class="contact-form">
-        <form id="contact-form" method="post" netlify>
+        <form id="contact-form" method="post" netlify data-netlify-recaptcha="true" data-netlify="true">
             <input name="name" type="text" class="form-control" placeholder="Your Name" required>
             <br>
             <input name="email" type="text" class="form-control" placeholder="Your Email" required>
             <br>
             <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+            <br>
+            <div data-netlify-recaptcha="true"></div>
             <br>
             <input type="submit" class="form-control submit" value="SEND MESSAGE">
         </form>
